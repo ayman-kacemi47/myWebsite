@@ -1,38 +1,291 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Poppins:wght@300;700&family=Sedgwick+Ave+Display&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Inter:wght@300;700&family=Poppins:wght@300;700&display=swap');
+
+:root{
+  --color-orange : #ff9a34;
+  --color-soft-white : rgba(255, 255, 255, 0.733);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Fira Mono', monospace;
+  color: white;
+}
+body{
+  background-color: rgb(0, 0, 0);
+  height: 2000px;
+}
+.content-container{
+  margin-top: 5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.2rem 1rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+.nav-ul{
+  margin: auto;
+  
+  list-style: none;
+  display: flex;
+  gap: 1rem ;
+
+}
+.nav-ul li{
+  
+ 
+  
+}
+
+ a{
+  padding: 5px 10px;
+  color: var(--color-soft-white);
+  text-decoration: none;
+}
+li a:hover:not(.active){
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 400 ;
+  /*   style for the text   */
+  color:var(--color-orange);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-right: auto;
+}
+.logo{
+  object-fit: cover;
+  border: 2px solid var(--color-orange);
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+.logo:hover{
+  transform: scale(1.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active{
+  color: var(--color-orange);
+  border: 1.5px solid var(--color-orange);
+  border-radius: 15px;
+}
+
+.lang a{
+  position: relative;
+}
+
+/*  about section  */
+.about-section{
+  background: rgb(255,154,52);
+  background: url('./images/backgrounds/topography.svg') ,radial-gradient( ellipse , rgba(253, 173, 93, 0.523) 10%, rgba(0,0,0,0) 80%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-section h1{
+  margin-bottom: 2rem ;
+  
+}
+.about-section div p i{
+  margin: 0.5rem 2rem ;
+}
+
+.cards{
+  position: relative;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.427);
+  border-radius: 5px;
+}
+.cards h2{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,-50%);
+  color: rgba(255, 255, 255, 0.758);
+  backdrop-filter: blur(10px);
+  padding: 0 1rem;
+  border:  2px solid rgba(255, 255, 255, 0.427);
+}
+
+
+.life-line {
+  position: absolute;
+  border-left: 1.5px dashed var(--color-orange);
+  height: 5rem;
+  left: 50%;
+  top: calc(100%  - 2rem);
+ 
+}
+
+
+
+.progress-container-withLine{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.progress-container {
+  display: flex;
+  width: 482px;
+  height: 150px;
+  margin: 2rem 0;
+}
+.progress-img, .projects-img{
+  flex: 1;
+  width: 200px;
+  position: relative;
+  background-color: #111111;
+  border-radius: 8px 0 0 8px;
+  border : 1px solid rgba(255, 255, 255, 0.1)
+}
+.progress-img i , .projects-img i{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-17%, -17%);
+
+}
+
+.progress-info, .projects-info{
+  padding: 0.5rem 1rem;
+  flex: 2;
+  background-color: rgb(34, 34, 34);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  border-radius: 0px 8px  8px 0px ;
+  
+}
+.progress-info h4,  .projects-info h4{
+  color: var(--color-orange);
+}
+.progress-info p, .projects-info p {
+  text-align: justify;
+  font-size: 12px;
+}
+
+.lang a:not(:last-child)::after{
+  content: '';
+  background-color: var(--color-soft-white);
+  position: absolute;
+  left: 2.5rem;
+  width: 2px;
+  height: 1.25rem;
+}
+
+section{
+  padding: 6rem;
+}
+.home-section h1 {
+  font-size: 3rem;
+}
+.home-section{
+   
+  line-height: 2;
+  height: 500px;
+ 
+  
+background: radial-gradient(ellipse, rgba(125,192,238,0) 30%, rgba(0,0,0,1) 86%),url('./images/backgrounds/topography-orange.svg');
+
+}
+
+/*  section des projets, quelque chose sont partagé avec progress cards*/
+.projects-container{
+  box-shadow: #000000 0px 2px 25px; 
+  display: flex;
+  width: 300px;
+  height: 120px;
+  margin: 2rem 0;
+}
+.projects-section{
+  position: relative;
+ background: radial-gradient(ellipse, rgba(255, 154, 52, 0.75) 10%, rgba(0, 0, 0, 0.6) 70%),url('./images/backgrounds/circuit-board.svg');
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+.projects-info {
+  border-radius: 0;
+  flex: 2;
+}
+.projects-img {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.338);
+  backdrop-filter: blur(2px);
+  border-radius:   0 ;
+ 
+
+}
+.arrowLeft , .arrowRight{
+  position: absolute;
+  z-index: 766;
+  padding: 10px;
+  top: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  transform: rotate(-45deg);
+  transition: 0.5s ease-in-out; 
+}
+.arrowLeft{
+  left: 10%;
+}
+.arrowRight{
+  transform: rotate(135deg);
+  right: 10%;
+  
+}
+
+.arrowLeft:hover , .arrowRight:hover{
+  border-top: 3px solid var(--color-orange);
+  border-left: 3px solid var(--color-orange);
+  cursor: pointer;
+  
+}
+
+.projects-wrapper{
+  position: relative;
+  display: flex;
+  gap: 10vw;
+  justify-content: space-between;
+}
+
+.projects-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( 90deg , rgba(0, 0, 0, 0.8) 0 15%, rgba(0,0,0,0) 25% 79%,  rgba(0, 0, 0, 0.805) 85% 100%);
+  z-index: 1; /* Make sure the overlay is on top of child elements */
 }
