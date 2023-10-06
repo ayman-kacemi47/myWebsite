@@ -2,11 +2,49 @@ import React, { useEffect } from 'react';
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
+  useEffect(() => {
+    const projectsList = document.querySelector('.projects-wrapper');
+    const slideButtons = document.querySelectorAll(
+      '.projects-section .slide-btn'
+    );
+    const maxScrollLeft = projectsList.scrollWidth - projectsList.clientWidth;
+    // console.log('slide buttons node ', slideButtons);
+
+    slideButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const direction = button.id === 'arrowLeft' ? -1 : 1;
+        const scrollAmount = (250 + projectsList.clientWidth * 0.1) * direction;
+        projectsList.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      });
+    });
+    // console.log(
+    //   projectsList.scrollLeft,
+    //   ' >= ',
+    //   maxScrollLeft,
+    //   'v:none  f:block'
+    // );
+
+    const handleHideArrow = () => {
+      slideButtons[0].style.display =
+        projectsList.scrollLeft <= 0 ? 'none' : 'block';
+      slideButtons[1].style.display =
+        projectsList.scrollLeft >= maxScrollLeft ? 'none' : 'block';
+    };
+
+    projectsList.addEventListener('scroll', () => {
+      handleHideArrow();
+    });
+  });
+
   return (
     <section className='projects-section' id='projects'>
       <h2>Projects</h2>
-      <div className='arrowLeft'></div>
-      <div className='arrowRight'></div>
+      <div
+        id='arrowLeft'
+        className=' slide-btn'
+        style={{ display: 'none' }}
+      ></div>
+      <div id='arrowRight' className=' slide-btn'></div>
       <div className='projects-wrapper'>
         <ProjectsCard
           title={'This Website 1'}

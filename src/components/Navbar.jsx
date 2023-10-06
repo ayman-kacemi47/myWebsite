@@ -1,44 +1,149 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from '../images/logo.jpg';
+import close from '../images/icons/close.svg';
 
 export default function Navbar() {
+  useEffect(() => {
+    const closeBtn = document.querySelector('#close-nav');
+    const openBtn = document.querySelector('#open-nav');
+    const navUl = document.querySelector('.nav-ul');
+
+    const pages = document.querySelectorAll('.nav-ul li a');
+
+    const setActiveSection = (sectionId) => {
+      pages.forEach((item) => {
+        if (item.getAttribute('href') === `#${sectionId}`) {
+          pages.forEach((link) => link.classList.remove('active'));
+          // no need we will do it based on the cuurent section.id
+          item.classList.add('active');
+          navUl.style.left = '-100vw';
+          closeBtn.style.display = 'none';
+          openBtn.style.display = 'block';
+        }
+      });
+    };
+
+    closeBtn.addEventListener('click', () => {
+      navUl.style.left = '-100vw';
+      closeBtn.style.display = 'none';
+      openBtn.style.display = 'block';
+    });
+
+    openBtn.addEventListener('click', () => {
+      navUl.style.left = '0';
+      closeBtn.style.display = 'block';
+      openBtn.style.display = 'none';
+    });
+
+    document.querySelectorAll('.nav-ul li a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({
+          behavior: 'smooth',
+        });
+
+        setActiveSection(targetId);
+      });
+    });
+
+    let activeSection = 'home';
+    document.addEventListener('scroll', function () {
+      let prevSection = activeSection;
+
+      document.querySelectorAll('section').forEach(function (section) {
+        if (
+          section.offsetTop <= window.scrollY &&
+          section.offsetTop + section.offsetHeight > window.scrollY
+        ) {
+          activeSection = section.id;
+        }
+      });
+
+      if (prevSection !== activeSection) {
+        setActiveSection(activeSection);
+      }
+    });
+  }, []);
+
   return (
     <div>
       <nav className='nav'>
         <div>
           <h1>
-            <a href='#' className='logo-container'>
-              <img src={logo} className='logo' /> Ayman_Kacemi{' '}
+            <a href='#home' className='logo-container'>
+              <img src={logo} className='logo' /> Ayman_Kacemi
             </a>
           </h1>
+          <div id='open-nav'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke-width='1.5'
+              stroke='currentColor'
+              class='w-6 h-6'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
+              />
+            </svg>
+          </div>
+
+          <img src={close} id='close-nav' />
         </div>
 
         <ul className='nav-ul'>
           <li>
-            <a href='#' className='active'>
+            <a href='#home' className='active home'>
               Home
             </a>
           </li>
           <li>
-            <a href='#about'> About</a>
+            <a href='#about' className='about'>
+              {' '}
+              About
+            </a>
           </li>
           <li>
-            <a href='#projects'>Projects </a>
+            <a href='#projects' className='projects'>
+              Projects{' '}
+            </a>
           </li>
           <li>
-            <a href='#uses'>Uses </a>
+            <a href='#uses' className='uses'>
+              Uses{' '}
+            </a>
           </li>
+          <div id='responsive-bar'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke-width='1.5'
+              stroke='currentColor'
+              class='w-6 h-6'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
+              />
+            </svg>
+          </div>
+          <div className='lang'>
+            <i
+              className='fa-solid fa-globe'
+              style={{ color: 'rgba(255, 255, 255, 0.733)' }}
+            ></i>
+            <a>EN</a>
+            <a>FR</a>
+            <a>AR</a>
+          </div>
         </ul>
-
-        <div className='lang'>
-          <i
-            className='fa-solid fa-globe'
-            style={{ color: 'rgba(255, 255, 255, 0.733)' }}
-          ></i>
-          <a>EN</a>
-          <a>FR</a>
-          <a>AR</a>
-        </div>
       </nav>
     </div>
   );
