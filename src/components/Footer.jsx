@@ -4,9 +4,11 @@ import GithubLogo from '../images/icons/github-mark.svg';
 import PhoneLogo from '../images/icons/phone.svg';
 import mailLogo from '../images/icons/mail.svg';
 import instgram from '../images/icons/instagram-logo.svg';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const [showHhoneNumber, setShowPhone] = useState(false);
+  const [t, i18n] = useTranslation();
   const year = new Date().getFullYear();
   console.log(' ae ', year);
   return (
@@ -30,7 +32,7 @@ const Footer = () => {
           <a href='tel:+212601249845' className='phoneLogo'>
             <img src={PhoneLogo} className='svg-icon' />
           </a>
-          <div class='PhoneHide'>+212601249845</div>
+          <div class='PhoneHide'>{t('phoneNumber')}</div>
         </div>
         <div>
           <a href='mailto:aymankacemi01@gmail.com'>

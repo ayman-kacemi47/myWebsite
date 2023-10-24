@@ -1,26 +1,28 @@
+import { Trans, useTranslation } from 'react-i18next';
 import React from 'react';
 
 const Home = () => {
+  const [t, i18n] = useTranslation();
   return (
     <section className='home-section' id='home'>
       <div>
         <h1>
-          Hi there<span style={{ color: '#fcd018' }}>,</span> I'm{' '}
-          <span style={{ color: '#e76c0b' }}>Ayman</span>
+          <Trans i18nKey='homeTitle'>
+            0<span style={{ color: '#fcd018' }}>1</span>
+            <span style={{ color: '#e76c0b' }}>2</span>
+          </Trans>
         </h1>
         <p>
-          Im a beginer developer,&nbsp;
-          <a
-            href='https://www.thefreedictionary.com/portraitist#:~:text=1.,painter%20%2D%20an%20artist%20who%20paints'
-            target='_blank'
-          >
-            portraitist
-          </a>
-          &nbsp; and a football lover.
-          <br />
-          Just trying to start my profesionel carriere as a{' '}
-          <strong>FULL-STACK </strong>
-          developer.
+          <Trans i18nKey='homeDescription'>
+            0
+            <a
+              href='https://www.thefreedictionary.com/portraitist#:~:text=1.,painter%20%2D%20an%20artist%20who%20paints'
+              target='_blank'
+            >
+              1
+            </a>
+            <span style={{ display: 'block' }}>  2</span>
+          </Trans>
         </p>
       </div>
     </section>

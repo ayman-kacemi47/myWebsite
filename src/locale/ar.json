@@ -1,0 +1,73 @@
+{
+    "logoText":"أيـمن_قـاسمـي",
+    "homePage":" الرئيسية",
+    "aboutPage":"عني",
+    "ProjectsPages":"مشاريع",
+    "UsesPages":"الاستخدامات",
+
+    "homeTitle":"مرحبا<1>،</1> أنا <2>أيمن</2>",
+    "homeDescription":"أنا مطور مبتدئ، <1>رسام بورتريه</1> ومحب لكرة القدم.<2> أحاول فقط بدء مسيرتي المهنية كمطور FULL-STACK.</2>",
+
+    
+
+    "aboutSectionTitle": "عني",
+    "aboutCountry": "المغرب",
+    "aboutCity":" الدار البيضاء",
+
+    "aboutEducationTitle":"التعليم",
+    "title1Bac":"البكالويا",
+    "BacStartDate":"شتنبر 2018 ",
+    "BacEndDate":" يونيو 2019",
+    "BacDescription":" الحصول على شهادة البكالويا شعبة العلوم الرياضية أ بثانوية البارودي.",
+
+    "title1Deug":"شهادة DEUG",
+    "DeugStartDate":"أكتوبر 2019 ",
+    "DeugEndDate":" يونيو 2022",
+    "DeugDescrtiption":"الحصول على شهادة DEUG شعبة SMI بكلية العلوم بن مسيك ",
+
+    "title1Licence":"الإجازة",
+    "LicenceStartDate":"أكتوبر 2022 ",
+    "LicenceEndDate":" يوليوز 2023",
+    "LicenceDescrtiption":"الحصول على شهادة الإجازة تخصص قاعدة البيانات بميزة حسن بكلية العلوم بن مسيك  ",
+
+    "aboutCoursesTitle":"الدورات",
+
+    "title1Mern":"MERN Stack",
+    "MernStartDate":"شتنبر 2023 ",
+    "MernEndDate":" أكتوبر 2023",
+    "MernDescrtiption":"دورة لتعليم أساسيات MERN على منصة Udemy مع براد",
+
+    "title1FullWeb":"دورة الويب الكاملة",
+    "title1FullWebStartDate":"شتنبر 2023 ",
+    "title1FullWebEndDate":" مستمر",
+    "title1FullWebDescrtiption":"دورة تعليم شاملة لأساسيات الويب على منصة Udemy مع أنجيلا يو.",
+
+    "projectsSectionTitle": "مشاريع",
+
+    "ThisProjectTitle" : "هذا الموقع",
+    "ThisProjectDesc" : "هذا الموقع بمثابة سيرة ذاتية، و في نفس الوقت تدريب لتطبيق ما أتعلمه.",
+
+    "PFETitle" : "مشروع نهاية الدراسة (PFE)",
+    "PFEDesc" : "تصميم و تحليل وظائف الموقع بإستخدام UML، ثم ثطوير الموقع بإستخدام React JS  و Laravel و أيضا إستخدام قاعدة بيانات من نوع SQL. دائماً بعقد جلسات مع المؤطرين  تقريبا مثل sprint من Scrum.",
+
+    "ToDoTitle":"تطبيق لائحة المهام.",
+    "ToDoDesc":"تطوير موقع للائحة المهام بإستخدام HTML, CSS و Javascript بدون إستخدام أي شيئ أخر من أجل تطبيق الأساسيات.",
+
+    "DevConnecterTitle":" تطبيق DevConnector",
+    "DevConnecterDesc":"تطبيق طورته بتتبع دورة ال MERN على منصة Udemy، مما يعني أنه يستخم قاعدة بيانات من نوع NoSql. ",
+
+    "WeatherAppTitle":"تطبيق النشرة الجوية",
+    "WeatherAppDesc":"موقع طورته بإستخدام React من أجل تقوية مكتسباتي في التعامل مع الAPIs، حيت إستخدمت عدة  APIs من نوع REST API من أجل تسهيل توفير المعلومات اللازمة للمسخدم.",
+
+    "usesSectionTitle": "الاستخدامات",
+    "usesLaptop" : "الكمبيوتر المحمول",
+    "usesOperatingSystem" : "نظام التشغيل",
+    "usesProcessor" : "المعالج",
+    "usesApplications" : "التطبيقات",
+    "usesMemory" : "الذاكرة",
+    "usesCardName" : "اسم البطاقة",
+    "usesPhone" : "الهاتف",
+
+    "phoneNumber":"212601249845+",
+    "ClickLogoText":"أنقر على الشعار لزيارة الموقع"
+}

@@ -1,29 +1,40 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Uses = () => {
+  const [t, i18n] = useTranslation();
   return (
     <section id='uses'>
-      <h1 style={{textAlign:"center" , margin:"48px"}}>Uses</h1>
+      <h1 style={{ textAlign: 'center', margin: '48px' }}>
+        {' '}
+        {t('usesSectionTitle')}{' '}
+      </h1>
       <ul>
         <li>
-          <strong>Laptop</strong> hp elitebook x360 1030 g2
+          <strong> {t('usesLaptop')} </strong> hp elitebook x360 1030 g2
         </li>
         <li>
           {' '}
-          <strong>Operating System</strong> Windows 10 Professionnel 64-bit
+          <strong>{t('usesOperatingSystem')}</strong> Windows 10 Professionnel
+          64-bit
         </li>
         <li>
-          <strong>Processor</strong> Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz (4
-          CPUs), ~2.7GHz
+          <strong>{t('usesProcessor')}</strong> Intel(R) Core(TM) i5-7200U CPU @
+          2.50GHz (4 CPUs), ~2.7GHz
         </li>
         <li>
-          <strong>Memory</strong> 8GB RAM
+          <strong>{t('usesApplications')}</strong> VS Code, Chrome, Postman,
+          Figma, Adobe Photoshop ...
         </li>
         <li>
-          <strong>Card name</strong> Intel(R) HD Graphics 620
+          <strong>{t('usesMemory')}</strong> 8GB RAM
         </li>
         <li>
-          <strong>Phone </strong> Redmi note 10 pro and Galaxy A2 Core
+          <strong> {t('usesCardName')} </strong> Intel(R) HD Graphics 620
+        </li>
+        <li>
+          <strong>{t('usesPhone')} </strong> Redmi note 10 pro and Galaxy A2
+          Core
         </li>
       </ul>
     </section>

@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import logo from '../images/logo.jpg';
 import close from '../images/icons/close.svg';
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
+  const [t, i18n] = useTranslation();
+
   useEffect(() => {
     const closeBtn = document.querySelector('#close-nav');
     const openBtn = document.querySelector('#open-nav');
@@ -70,10 +73,11 @@ export default function Navbar() {
   return (
     <div>
       <nav className='nav'>
-        <div>
+        <div className='SamllNav'>
           <h1>
             <a href='#home' className='logo-container'>
-              <img src={logo} className='logo' /> Ayman_Kacemi
+              <img src={logo} className='logo' alt='myPicture' />
+              {t('logoText')}
             </a>
           </h1>
           <div id='open-nav'>
@@ -93,29 +97,29 @@ export default function Navbar() {
             </svg>
           </div>
 
-          <img src={close} id='close-nav' />
+          <img src={close} id='close-nav' alt='close_x_logo' />
         </div>
 
         <ul className='nav-ul'>
           <li>
             <a href='#home' className='active home'>
-              Home
+              {t('homePage')}
             </a>
           </li>
           <li>
             <a href='#about' className='about'>
               {' '}
-              About
+              {t('aboutPage')}
             </a>
           </li>
           <li>
             <a href='#projects' className='projects'>
-              Projects{' '}
+              {t('ProjectsPages')}{' '}
             </a>
           </li>
           <li>
             <a href='#uses' className='uses'>
-              Uses{' '}
+              {t('UsesPages')}{' '}
             </a>
           </li>
           <div id='responsive-bar'>
@@ -137,11 +141,35 @@ export default function Navbar() {
           <div className='lang'>
             <i
               className='fa-solid fa-globe'
-              style={{ color: 'rgba(255, 255, 255, 0.733)' }}
+              style={{ color: 'rgba(255, 255, 255, 0.733)', margin: '0 1rem' }}
             ></i>
-            <a>EN</a>
-            <a>FR</a>
-            <a>AR</a>
+            {i18n.language !== 'en' && (
+              <button
+                onClick={() => {
+                  i18n.changeLanguage('en');
+                }}
+              >
+                EN
+              </button>
+            )}
+            {i18n.language !== 'fr' && (
+              <button
+                onClick={() => {
+                  i18n.changeLanguage('fr');
+                }}
+              >
+                FR
+              </button>
+            )}
+            {i18n.language !== 'ar' && (
+              <button
+                onClick={() => {
+                  i18n.changeLanguage('ar');
+                }}
+              >
+                AR
+              </button>
+            )}
           </div>
         </ul>
       </nav>

@@ -1,14 +1,22 @@
 import React, { useEffect } from 'react';
 import ProjectsCard from './ProjectsCard';
+import ReactLaravel from '../images/icons/reactAndLaravel.png';
+import HtmlCssJs from '../images/icons/htmlCssJs.png';
+import Mern from '../images/icons/Mern.png';
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 const Projects = () => {
+  const [t, i18n] = useTranslation();
+  const dir = i18n.dir() === 'rtl' ? -1 : 1; //si right to left on doit changes la logique de Js
+  console.log(' dir rtl = -1  else -1  ::::  ', dir);
   useEffect(() => {
     const projectsList = document.querySelector('.projects-wrapper');
     const slideButtons = document.querySelectorAll(
       '.projects-section .slide-btn'
     );
     const maxScrollLeft = projectsList.scrollWidth - projectsList.clientWidth;
-    // console.log('slide buttons node ', slideButtons);
+    console.log('max ', maxScrollLeft);
 
     slideButtons.forEach((button) => {
       button.addEventListener('click', () => {
@@ -17,18 +25,22 @@ const Projects = () => {
         projectsList.scrollBy({ left: scrollAmount, behavior: 'smooth' });
       });
     });
-    // console.log(
-    //   projectsList.scrollLeft,
-    //   ' >= ',
-    //   maxScrollLeft,
-    //   'v:none  f:block'
-    // );
 
     const handleHideArrow = () => {
-      slideButtons[0].style.display =
-        projectsList.scrollLeft <= 0 ? 'none' : 'block';
-      slideButtons[1].style.display =
-        projectsList.scrollLeft >= maxScrollLeft ? 'none' : 'block';
+      if (dir === -1) {
+        // dir === -1  donc c'est l'arabe
+        slideButtons[0].style.display =
+          projectsList.scrollLeft >= 0 ? 'none' : 'block';
+        slideButtons[1].style.display =
+          projectsList.scrollLeft <= maxScrollLeft * dir + 10 // + 10  c'est comme incertitude , + parceque la valeur est negatif
+            ? 'none'
+            : 'block';
+      } else {
+        slideButtons[0].style.display =
+          projectsList.scrollLeft <= 0 ? 'none' : 'block';
+        slideButtons[1].style.display =
+          projectsList.scrollLeft >= maxScrollLeft - 10 ? 'none' : 'block';
+      }
     };
 
     projectsList.addEventListener('scroll', () => {
@@ -36,94 +48,96 @@ const Projects = () => {
     });
   });
 
+  const moreInfos = document.querySelectorAll('.ButtonShowMore');
+  console.log('item 1: ', moreInfos);
+  moreInfos.forEach((item) => {
+    if (!item.hasClickListener) {
+      // if pour eviter d'ajouter plusieur event listner a le meme element
+      item.addEventListener('click', function () {
+        item.parentElement.classList.toggle('openProject');
+        item.classList.toggle('RotateButton');
+      });
+      item.hasClickListener = true;
+    }
+  });
+
   return (
     <section className='projects-section' id='projects'>
-      <h2>Projects</h2>
+      <h2>{t('projectsSectionTitle')}</h2>
+      <h6 className='h6ClickLogo' style={{ textAlign: 'center' }}>
+        {t('ClickLogoText')}
+      </h6>
       <div
-        id='arrowLeft'
+        id={dir === 1 ? 'arrowLeft' : 'arrowRight'}
         className=' slide-btn'
         style={{ display: 'none' }}
       ></div>
-      <div id='arrowRight' className=' slide-btn'></div>
+      <div
+        id={dir === 1 ? 'arrowRight' : 'arrowLeft'}
+        className=' slide-btn'
+      ></div>
       <div className='projects-wrapper'>
         <ProjectsCard
-          title={'This Website 1'}
-          description={'description about the website'}
+          title={t('ThisProjectTitle')}
+          description={t('ThisProjectDesc')}
           icon={
-            <i
-              className='fa-brands fa-react'
-              style={{ color: 'white', scale: '3.5', opacity: '0.9' }}
-            />
+            <a href='#'>
+              <i
+                className='fa-brands fa-react'
+                style={{ color: 'white', scale: '3.5', opacity: '0.9' }}
+              />
+            </a>
           }
           id={1}
         />
         <ProjectsCard
-          title={'This Website 2'}
-          description={'description about the website'}
+          title={t('PFETitle')}
+          description={t('PFEDesc')}
           icon={
-            <i
-              className='fa-brands fa-react'
-              style={{ color: 'white', scale: '3.5', opacity: '0.9' }}
+            <img
+              alt='React and laravel logos'
+              src={ReactLaravel}
+              style={{ height: '83px', margin: 'auto', opacity: '0.8' }}
             />
           }
         />
         <ProjectsCard
-          title={'This Website 3'}
-          description={'description about the website'}
+          title={t('ToDoTitle')}
+          description={t('ToDoDesc')}
           icon={
-            <i
-              className='fa-brands fa-react'
-              style={{ color: 'white', scale: '3.5', opacity: '0.9' }}
+            <img
+              alt=' html,css an JavaScript logos'
+              src={HtmlCssJs}
+              style={{ height: '83px', margin: 'auto', opacity: '0.8' }}
             />
           }
         />
         <ProjectsCard
-          title={'This Website 4'}
-          description={'description about the website'}
+          title={t('DevConnecterTitle')}
+          description={t('DevConnecterDesc')}
           icon={
-            <i
-              className='fa-brands fa-react'
-              style={{ color: 'white', scale: '3.5', opacity: '0.9' }}
+            <img
+              alt='Mern Logo'
+              src={Mern}
+              style={{ height: '100px', margin: 'auto', opacity: '0.8' }}
             />
           }
         />
         <ProjectsCard
-          title={'This Website 5'}
-          description={'description about the website'}
+          title={t('WeatherAppTitle')}
+          description={t('WeatherAppDesc')}
           icon={
-            <i
-              className='fa-brands fa-react'
-              style={{ color: 'white', scale: '3.5', opacity: '0.9' }}
-            />
-          }
-        />
-        <ProjectsCard
-          title={'This Website 6'}
-          description={'description about the website'}
-          icon={
-            <i
-              className='fa-brands fa-react'
-              style={{ color: 'white', scale: '3.5', opacity: '0.9' }}
-            />
+            <a href='https://ak-47-weather-app.vercel.app/' target='_blank'>
+              <i
+                className='fa-brands fa-react'
+                style={{ color: 'white', scale: '3.5', opacity: '0.9' }}
+              />
+            </a>
           }
         />
       </div>
-      {/* <div className='projects-map' style={{ display: 'flex' }}>
-        <span style={style}></span>
-        <span style={style}></span>
-        <span style={style}></span>
-      </div> */}
     </section>
   );
 };
-// const style = {
-//   display: 'block',
-//   margin: '1rem',
-//   minWidth: '15px',
-//   minHeight: '15px',
-//   backgroundColor: '#ff9a34',
-//   border: '1px solid black',
-//   borderRadius: '50px',
-//   opacity: '0.5',
-// };
+
 export default Projects;
