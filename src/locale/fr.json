@@ -50,7 +50,7 @@
         "ThisProjectDesc" : "Ce site web sert de CV, et en même temps d'entraînement pour appliquer ce que j'apprends.",
     
         "PFETitle" : "Projet de fin d'études (PFE)",
-        "PFEDesc" : "Conception et analyse des fonctions du site en utilisant UML, puis développement du site en utilisant React JS et Laravel et également l'utilisation d'une base de données SQL. Toujours en tenant des réunions avec les encadrants presque comme le sprint de Scrum.",
+        "PFEDesc" : "Conception et analyse des fonctions du site en utilisant UML, puis développement du site en utilisant React JS et Laravel et également l'utilisation d'une base de données SQL. Toujours en tenant des réunions avec les encadrants presque comme le sprint de Scrum.<1>Pas d’accès</1>",
     
         "ToDoTitle":"Application de liste de tâches.",
         "ToDoDesc":"Développement d'un site de liste de tâches en utilisant HTML, CSS et Javascript sans utiliser quoi que ce soit d'autre pour appliquer les bases.",
@@ -73,5 +73,7 @@
     "usesPhone" : "Téléphone",
 
     "phoneNumber":"+212601249845",
-    "ClickLogoText":" Cliquez sur le logo pour visiter le site"
+    "ClickLogoText":" Cliquez sur le logo pour visiter le site",
+    "cv":"Curriculum Vitae (CV)",
+    "certificat":"certificat"
 }

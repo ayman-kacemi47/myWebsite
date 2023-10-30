@@ -3,7 +3,7 @@ import ProjectsCard from './ProjectsCard';
 import ReactLaravel from '../images/icons/reactAndLaravel.png';
 import HtmlCssJs from '../images/icons/htmlCssJs.png';
 import Mern from '../images/icons/Mern.png';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { useState } from 'react';
 
 const Projects = () => {
@@ -92,7 +92,11 @@ const Projects = () => {
         />
         <ProjectsCard
           title={t('PFETitle')}
-          description={t('PFEDesc')}
+          description={
+            <Trans i18nKey='PFEDesc'>
+              0<div style={{ color: '#fcd018', textAlign: 'center' }}>1</div>
+            </Trans>
+          }
           icon={
             <img
               alt='React and laravel logos'
@@ -105,29 +109,45 @@ const Projects = () => {
           title={t('ToDoTitle')}
           description={t('ToDoDesc')}
           icon={
-            <img
-              alt=' html,css an JavaScript logos'
-              src={HtmlCssJs}
-              style={{ height: '83px', margin: 'auto', opacity: '0.8' }}
-            />
+            <a
+              href='https://ayman-to-do-list.vercel.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                alt=' html,css an JavaScript logos'
+                src={HtmlCssJs}
+                style={{ height: '83px', margin: 'auto', opacity: '0.8' }}
+              />
+            </a>
           }
         />
         <ProjectsCard
           title={t('DevConnecterTitle')}
           description={t('DevConnecterDesc')}
           icon={
-            <img
-              alt='Mern Logo'
-              src={Mern}
-              style={{ height: '100px', margin: 'auto', opacity: '0.8' }}
-            />
+            <a
+              href='https://ayman-mern-brad.onrender.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                alt='Mern Logo'
+                src={Mern}
+                style={{ height: '100px', margin: 'auto', opacity: '0.8' }}
+              />
+            </a>
           }
         />
         <ProjectsCard
           title={t('WeatherAppTitle')}
           description={t('WeatherAppDesc')}
           icon={
-            <a href='https://ak-47-weather-app.vercel.app/' target='_blank'>
+            <a
+              href='https://ak-47-weather-app.vercel.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <i
                 className='fa-brands fa-react'
                 style={{ color: 'white', scale: '3.5', opacity: '0.9' }}

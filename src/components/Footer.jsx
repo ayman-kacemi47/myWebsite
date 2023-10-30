@@ -18,29 +18,42 @@ const Footer = () => {
           <a
             href='https://www.linkedin.com/in/ayman-kacemi-439411197/'
             target='blank'
+            rel='noopener noreferrer'
           >
             <img src={linkedinLogo} className='svg-icon' />
           </a>
         </div>
         <div>
-          <a href='https://github.com/ayman-kacemi47' target='blank'>
+          <a
+            href='https://github.com/ayman-kacemi47'
+            target='blank'
+            rel='noopener noreferrer'
+          >
             {' '}
             <img src={GithubLogo} className='svg-icon' />
           </a>
         </div>
         <div style={{ position: 'relative' }}>
-          <a href='tel:+212601249845' className='phoneLogo'>
+          <a
+            href='tel:+212601249845'
+            className='phoneLogo'
+            rel='noopener noreferrer'
+          >
             <img src={PhoneLogo} className='svg-icon' />
           </a>
           <div class='PhoneHide'>{t('phoneNumber')}</div>
         </div>
         <div>
-          <a href='mailto:aymankacemi01@gmail.com'>
+          <a href='mailto:aymankacemi01@gmail.com' rel='noopener noreferrer'>
             <img src={mailLogo} className='svg-icon' />
           </a>
         </div>
         <div>
-          <a href='https://www.instagram.com/kacemi47/' target='blank'>
+          <a
+            href='https://www.instagram.com/kacemi47/'
+            target='blank'
+            rel='noopener noreferrer'
+          >
             <img src={instgram} className='svg-icon' />
           </a>
         </div>

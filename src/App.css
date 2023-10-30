@@ -645,3 +645,33 @@ transform: translateX(-50%);
   animation: alert 1s infinite  ;
 }
 
+
+.downloadCV{
+  color: #ff9a34;
+  background-color: rgb(34, 34, 34);
+  border: 1px solid rgba(112, 128, 144, 0.425);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+.downloadCV i{
+ font-size: 24px;
+ margin-right:8px ;
+}
+.App[dir="rtl"] .downloadCV i{
+  margin-left:8px ;
+ }
+
+ .downloadHover , .downloadHover i {
+  transition: 0.2s ease-in-out;
+ }
+
+ .downloadHover:hover, .downloadHover:hover i{
+  color: #ff9a34e4;
+  opacity: 0.9;
+  transform: scale(0.97);
+
+ }

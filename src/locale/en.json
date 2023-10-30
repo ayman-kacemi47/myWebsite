@@ -49,7 +49,7 @@
         "ThisProjectDesc" : "This website serves as a CV, and at the same time a training to apply what I learn.",
     
         "PFETitle" : "Study Final-Project (PFE)",
-        "PFEDesc" : "Design and analysis of the site's functions using UML, then developing the site using React JS and Laravel and also using a SQL database. Always holding meetings with supervisors almost like Scrum's sprint.",
+        "PFEDesc" : "Design and analysis of the site's functions using UML, then developing the site using React JS and Laravel and also using a SQL database. Always holding meetings with supervisors almost like Scrum's sprint.<1>No Access</1>",
     
         "ToDoTitle":"To-Do List Application.",
         "ToDoDesc":"Developing a to-do list site using HTML, CSS, and Javascript without using anything else to apply the basics.",
@@ -71,6 +71,9 @@
      "usesPhone" : "Phone",
 
      "phoneNumber":"+212601249845",
-     "ClickLogoText":" Click on logo to visit the website"
+     "ClickLogoText":" Click on logo to visit the website",
+     "cv":"Curriculum Vitae (CV)",
+     "certificat":"Certificate"
+
     
 }

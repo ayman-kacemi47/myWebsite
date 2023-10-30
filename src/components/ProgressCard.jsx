@@ -1,5 +1,6 @@
 import React from 'react';
 import Line from './layouts/line';
+import { useTranslation } from 'react-i18next';
 
 const ProgressCard = ({
   icon,
@@ -8,7 +9,9 @@ const ProgressCard = ({
   endDate,
   description,
   line,
+  download,
 }) => {
+  const [t, i18n] = useTranslation();
   return (
     <div className='progress-container-withLine'>
       <div className='progress-container'>
@@ -25,6 +28,11 @@ const ProgressCard = ({
             {endDate}
           </h5>
           <p>{description}</p>
+          {download && (
+            <a href={download} className='downloadHover' download>
+              {t('certificat')} <i class='fas fa-file-download '></i>
+            </a>
+          )}
         </div>
       </div>
       {line && <Line />}

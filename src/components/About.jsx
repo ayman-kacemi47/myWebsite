@@ -14,6 +14,19 @@ const About = () => {
     <section className='about-section' id='about'>
       <h1>{t('aboutSectionTitle')}</h1>
       <div>
+        <a
+          className='downloadCV downloadHover'
+          href='CV.pdf'
+          download={'kacemi-ayman-cv.pdf'}
+        >
+          <i
+            className='fa-solid fa-circle-down'
+            style={{ color: '#ff9a34' }}
+          ></i>
+          {t('cv')}
+        </a>
+      </div>
+      <div>
         <p>
           <i class='fa fa-calendar' aria-hidden='true' /> 2001/10/19 (
           <span style={{ color: '#EB9605' }}>{calcAge()}</span>)
@@ -64,6 +77,7 @@ const About = () => {
             startDate={t('LicenceStartDate')}
             endDate={t('LicenceEndDate')}
             description={t('LicenceDescrtiption')}
+            download={'Licence.pdf'}
           />
         </div>
 
@@ -81,6 +95,7 @@ const About = () => {
             endDate={t('MernEndDate')}
             description={t('MernDescrtiption')}
             line={true}
+            download={'ayman_kacemi_MERN_certificat.pdf'}
           />
           <ProgressCard
             title={t('title1FullWeb')}
