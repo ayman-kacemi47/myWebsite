@@ -41,7 +41,7 @@ const Footer = () => {
           >
             <img src={PhoneLogo} className='svg-icon' />
           </a>
-          <div class='PhoneHide'>{t('phoneNumber')}</div>
+          <div className='PhoneHide'>{t('phoneNumber')}</div>
         </div>
         <div>
           <a href='mailto:aymankacemi01@gmail.com' rel='noopener noreferrer'>
@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <i class='fa fa-copyright' aria-hidden='true'></i>
+        <i className='fa fa-copyright' aria-hidden='true'></i>
         {year} Ayman Kacemi (AK47)
       </div>
     </div>

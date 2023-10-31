@@ -21,7 +21,7 @@ const ProgressCard = ({
           <h5>
             {startDate}
             <i
-              class='fa fa-arrow-right'
+              className='fa fa-arrow-right'
               aria-hidden='true'
               style={{ color: '#EB9605' }}
             />
@@ -30,7 +30,7 @@ const ProgressCard = ({
           <p>{description}</p>
           {download && (
             <a href={download} className='downloadHover' download>
-              {t('certificat')} <i class='fas fa-file-download '></i>
+              {t('certificat')} <i className='fas fa-file-download '></i>
             </a>
           )}
         </div>

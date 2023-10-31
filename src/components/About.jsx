@@ -28,11 +28,11 @@ const About = () => {
       </div>
       <div>
         <p>
-          <i class='fa fa-calendar' aria-hidden='true' /> 2001/10/19 (
+          <i className='fa fa-calendar' aria-hidden='true' /> 2001/10/19 (
           <span style={{ color: '#EB9605' }}>{calcAge()}</span>)
         </p>
         <p>
-          <i class='fa fa-map-marker' aria-hidden='true' />
+          <i className='fa fa-map-marker' aria-hidden='true' />
           {t('aboutCountry')},{' '}
           <span style={{ color: '#EB9605' }}> {t('aboutCity')}</span>
         </p>

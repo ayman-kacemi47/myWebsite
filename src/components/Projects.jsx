@@ -48,19 +48,6 @@ const Projects = () => {
     });
   });
 
-  const moreInfos = document.querySelectorAll('.ButtonShowMore');
-  console.log('item 1: ', moreInfos);
-  moreInfos.forEach((item) => {
-    if (!item.hasClickListener) {
-      // if pour eviter d'ajouter plusieur event listner a le meme element
-      item.addEventListener('click', function () {
-        item.parentElement.classList.toggle('openProject');
-        item.classList.toggle('RotateButton');
-      });
-      item.hasClickListener = true;
-    }
-  });
-
   return (
     <section className='projects-section' id='projects'>
       <h2>{t('projectsSectionTitle')}</h2>
@@ -94,7 +81,16 @@ const Projects = () => {
           title={t('PFETitle')}
           description={
             <Trans i18nKey='PFEDesc'>
-              0<div style={{ color: '#fcd018', textAlign: 'center' }}>1</div>
+              0
+              <span
+                style={{
+                  color: '#fcd018',
+                  textAlign: 'center',
+                  display: 'block',
+                }}
+              >
+                1
+              </span>
             </Trans>
           }
           icon={
