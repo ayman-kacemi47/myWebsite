@@ -9,6 +9,7 @@ const Home = () => {
         <h1>
           <Trans i18nKey='homeTitle'>
             0<span style={{ color: '#fcd018' }}>1</span>
+            <span style={{ color: '#e76c0b' }}>2</span>
           </Trans>
         </h1>
         <p>
