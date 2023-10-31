@@ -611,8 +611,9 @@ transform: translateX(-50%) rotate(45deg);
   margin-bottom: 20px;
   left: 50%;
   bottom: 0px;
-transform: translateX(-50%);  
+  transform: translateX(-50%);  
   animation: infosArrowAni 1s infinite ;
+  min-height: 25px;
  
 }
 .ButtonShowMore:hover {

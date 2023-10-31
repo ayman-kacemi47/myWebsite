@@ -8,6 +8,7 @@ const ProjectsCard = ({ icon, title, description }) => {
         <p>{description}</p>
       </div>
       <div className='projects-img '>{icon}</div>{' '}
+      
       <i
         class='fa-solid fa-circle-chevron-down ButtonShowMore'
         style={{ color: '#989aa0' }}
