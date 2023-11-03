@@ -94,11 +94,17 @@ const Projects = () => {
             </Trans>
           }
           icon={
-            <img
-              alt='React and laravel logos'
-              src={ReactLaravel}
-              style={{ height: '83px', margin: 'auto', opacity: '0.8' }}
-            />
+            <a
+              href='https://youtu.be/HzMYFqQHZbg'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                alt='React and laravel logos'
+                src={ReactLaravel}
+                style={{ height: '83px', margin: 'auto', opacity: '0.8' }}
+              />
+            </a>
           }
         />
         <ProjectsCard
