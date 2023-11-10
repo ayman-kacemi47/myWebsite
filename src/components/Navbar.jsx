@@ -122,7 +122,7 @@ export default function Navbar() {
               {t('UsesPages')}{' '}
             </a>
           </li>
-          <div id='responsive-bar'>
+          <li id='responsive-bar'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
@@ -137,8 +137,8 @@ export default function Navbar() {
                 d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
               />
             </svg>
-          </div>
-          <div className='lang'>
+          </li>
+          <li className='lang'>
             <i
               className='fa-solid fa-globe'
               style={{ color: 'rgba(255, 255, 255, 0.733)', margin: '0 1rem' }}
@@ -170,7 +170,7 @@ export default function Navbar() {
                 AR
               </button>
             )}
-          </div>
+          </li>
         </ul>
       </nav>
     </div>

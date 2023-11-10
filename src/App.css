@@ -510,6 +510,7 @@ background: radial-gradient(ellipse, rgba(125,192,238,0) 30%, rgba(0,0,0,1) 86%)
 
 .svg-icon {
  width: 24px;
+ height: 24px;
  cursor: pointer;
 }
 .svg-icon:hover{

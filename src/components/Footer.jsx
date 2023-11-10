@@ -10,7 +10,7 @@ const Footer = () => {
   const [showHhoneNumber, setShowPhone] = useState(false);
   const [t, i18n] = useTranslation();
   const year = new Date().getFullYear();
-  console.log(' ae ', year);
+
   return (
     <div className='footer'>
       <div className='reseau'>
@@ -20,7 +20,7 @@ const Footer = () => {
             target='blank'
             rel='noopener noreferrer'
           >
-            <img src={linkedinLogo} className='svg-icon' />
+            <img src={linkedinLogo} className='svg-icon' alt='linkedin logo' />
           </a>
         </div>
         <div>
@@ -30,7 +30,7 @@ const Footer = () => {
             rel='noopener noreferrer'
           >
             {' '}
-            <img src={GithubLogo} className='svg-icon' />
+            <img src={GithubLogo} className='svg-icon' alt='github logo' />
           </a>
         </div>
         <div style={{ position: 'relative' }}>
@@ -39,13 +39,13 @@ const Footer = () => {
             className='phoneLogo'
             rel='noopener noreferrer'
           >
-            <img src={PhoneLogo} className='svg-icon' />
+            <img src={PhoneLogo} className='svg-icon' alt='phone logo' />
           </a>
           <div className='PhoneHide'>{t('phoneNumber')}</div>
         </div>
         <div>
           <a href='mailto:aymankacemi01@gmail.com' rel='noopener noreferrer'>
-            <img src={mailLogo} className='svg-icon' />
+            <img src={mailLogo} className='svg-icon' alt='mail logo' />
           </a>
         </div>
         <div>
@@ -54,7 +54,7 @@ const Footer = () => {
             target='blank'
             rel='noopener noreferrer'
           >
-            <img src={instgram} className='svg-icon' />
+            <img src={instgram} className='svg-icon' alt='instagram logo' />
           </a>
         </div>
       </div>

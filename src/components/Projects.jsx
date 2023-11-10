@@ -51,9 +51,9 @@ const Projects = () => {
   return (
     <section className='projects-section' id='projects'>
       <h2>{t('projectsSectionTitle')}</h2>
-      <h6 className='h6ClickLogo' style={{ textAlign: 'center' }}>
+      <p className='h6ClickLogo' style={{ textAlign: 'center' }}>
         {t('ClickLogoText')}
-      </h6>
+      </p>
       <div
         id={dir === 1 ? 'arrowLeft' : 'arrowRight'}
         className=' slide-btn'
@@ -68,7 +68,7 @@ const Projects = () => {
           title={t('ThisProjectTitle')}
           description={t('ThisProjectDesc')}
           icon={
-            <a href='#'>
+            <a href={window.location.href}>
               <i
                 className='fa-brands fa-react'
                 style={{ color: 'white', scale: '3.5', opacity: '0.9' }}
