@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import ProjectsCard from './ProjectsCard';
 import ReactLaravel from '../images/icons/reactAndLaravel.png';
+import ReactLaravelWeb from '../images/icons/reactandlaravelWeb.webp';
 import HtmlCssJs from '../images/icons/htmlCssJs.png';
+import HtmlCssJsWeb from '../images/icons/htmlCssJsWeb.webp';
 import Mern from '../images/icons/Mern.png';
+import MernWeb from '../images/icons/mernWeb.webp';
 import { Trans, useTranslation } from 'react-i18next';
 import { useState } from 'react';
 
@@ -99,11 +102,14 @@ const Projects = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img
-                alt='React and laravel logos'
-                src={ReactLaravel}
-                style={{ height: '83px', margin: 'auto', opacity: '0.8' }}
-              />
+              <picture>
+                <source type='image/webp' srcSet={ReactLaravelWeb} />
+                <img
+                  alt='React and laravel logos'
+                  src={ReactLaravel}
+                  style={{ height: '83px', margin: 'auto', opacity: '0.8' }}
+                />
+              </picture>
             </a>
           }
         />
@@ -116,11 +122,14 @@ const Projects = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img
-                alt=' html,css an JavaScript logos'
-                src={HtmlCssJs}
-                style={{ height: '83px', margin: 'auto', opacity: '0.8' }}
-              />
+              <picture>
+                <source type='image/webp' srcSet={HtmlCssJsWeb} />
+                <img
+                  alt=' html,css an JavaScript logos'
+                  src={HtmlCssJs}
+                  style={{ height: '83px', margin: 'auto', opacity: '0.8' }}
+                />
+              </picture>
             </a>
           }
         />
@@ -133,11 +142,15 @@ const Projects = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img
-                alt='Mern Logo'
-                src={Mern}
-                style={{ height: '100px', margin: 'auto', opacity: '0.8' }}
-              />
+              <picture>
+                <source type='image/webp' srcSet={MernWeb} />
+
+                <img
+                  alt='Mern Logo'
+                  src={Mern}
+                  style={{ height: '100px', margin: 'auto', opacity: '0.8' }}
+                />
+              </picture>
             </a>
           }
         />

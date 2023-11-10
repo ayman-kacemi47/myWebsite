@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import logo from '../images/logo.jpg';
+import logoWeb from '../images/logoWeb.webp';
 import close from '../images/icons/close.svg';
 import { useTranslation } from 'react-i18next';
 
@@ -76,7 +77,10 @@ export default function Navbar() {
         <div className='SamllNav'>
           <h1>
             <a href='#home' className='logo-container'>
+              <picture>
+              <source type='image/webp' srcSet={logoWeb} />
               <img src={logo} className='logo' alt='myPicture' />
+              </picture>
               {t('logoText')}
             </a>
           </h1>
