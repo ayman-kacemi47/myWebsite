@@ -5,6 +5,18 @@ const Home = () => {
   const [t, i18n] = useTranslation();
   return (
     <section className='home-section' id='home'>
+      <div style={{ textAlign: 'center' }}>
+        <script
+          type='text/javascript'
+          src='https://freehitcounters.org/count/de38'
+        ></script>
+        <br />
+        <a href='http://www.counter-zaehler.de'>besucherzähler ip</a>{' '}
+        <script
+          type='text/javascript'
+          src='https://www.whomania.com/ctr?id=e688b3f1df301053a3a517377e1cf9e1bc3e7a68'
+        ></script>
+      </div>
       <div>
         <h1>
           <Trans i18nKey='homeTitle'>
