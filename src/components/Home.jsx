@@ -1,27 +1,22 @@
 import { Trans, useTranslation } from 'react-i18next';
 import React, { useEffect, useState } from 'react';
-import countapi from 'countapi-js';
 
 const Home = () => {
   const [t, i18n] = useTranslation();
   const [visitors, setVisitors] = useState();
 
-  useEffect(() => {
-    countapi.visits('ayman-kacemi-website.onrender.com').then((result) => {
-      console.log(result.value);
-      setVisitors(result.value);
-    });
-  }, []);
-
   return (
     <section className='home-section' id='home'>
-      <div style={{ textAlign: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         {t('visitors')}{' '}
-        <span
-          style={{ color: '#ff9a34', fontSize: '1.25rem', fontWeight: '700' }}
-        >
-          {visitors}
-        </span>
+        <a href='https://www.freecounterstat.com' title='html hit counter code'>
+          <img
+            src='https://counter7.optistats.ovh/private/freecounterstat.php?c=qmzn7l9phg39sjl1sty1yqc4l2t5jskg'
+            border='0'
+            title='html hit counter code'
+            alt='html hit counter code'
+          />
+        </a>
       </div>
       <div>
         <h1>
