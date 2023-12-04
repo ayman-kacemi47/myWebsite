@@ -1,21 +1,27 @@
 import { Trans, useTranslation } from 'react-i18next';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import countapi from 'countapi-js';
 
 const Home = () => {
   const [t, i18n] = useTranslation();
+  const [visitors, setVisitors] = useState();
+
+  useEffect(() => {
+    countapi.visits('ayman-kacemi-website.onrender.com').then((result) => {
+      console.log(result.value);
+      setVisitors(result.value);
+    });
+  }, []);
+
   return (
     <section className='home-section' id='home'>
       <div style={{ textAlign: 'center' }}>
-        <script
-          type='text/javascript'
-          src='https://freehitcounters.org/count/de38'
-        ></script>
-        <br />
-        <a href='http://www.counter-zaehler.de'>besucherzähler ip</a>{' '}
-        <script
-          type='text/javascript'
-          src='https://www.whomania.com/ctr?id=e688b3f1df301053a3a517377e1cf9e1bc3e7a68'
-        ></script>
+        {t('visitors')}{' '}
+        <span
+          style={{ color: '#ff9a34', fontSize: '1.25rem', fontWeight: '700' }}
+        >
+          {visitors}
+        </span>
       </div>
       <div>
         <h1>
