@@ -200,7 +200,7 @@ const Projects = () => {
         <ProjectsCard
           title={t("Projects.InsuranceBrokerClientApp.title")}
           description={t("Projects.InsuranceBrokerClientApp.desc")}
-          hoverMessage={t("hoverMessage")}
+          hoverMessage={t("linkHoverMessage")}
           icon={
             <picture>
               <source type="image/webp" srcSet={flutterAndLaravelWeb} />
@@ -217,7 +217,7 @@ const Projects = () => {
         <ProjectsCard
           title={t("Projects.RentalAdmin.title")}
           description={t("Projects.RentalAdmin.desc")}
-          hoverMessage={t("hoverMessage")}
+          hoverMessage={t("linkHoverMessage")}
           icon={
             <i
               className="fa-brands fa-react"

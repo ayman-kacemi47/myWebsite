@@ -17,13 +17,26 @@ const About = () => {
         <a
           className='downloadCV downloadHover'
           href='CV.pdf'
-          download={'kacemi-ayman-cv.pdf'}
+          download={'cv_KACEMI_Ayman_developpeur_web_et_mobile_full-stack.pdf'}
         >
           <i
             className='fa-solid fa-circle-down'
             style={{ color: '#ff9a34' }}
           ></i>
           {t('cv')}
+        </a>
+      </div>
+      <div>
+        <a
+          className='downloadCV downloadHover'
+          href='lettre_de_motivation.pdf'
+          download={'lettre_de_motivation_KACEMI_Ayman.pdf'}
+        >
+          <i
+            className='fa-solid fa-circle-down'
+            style={{ color: '#ff9a34' }}
+          ></i>
+          {t('lettreMotivation')}
         </a>
       </div>
       <div>
