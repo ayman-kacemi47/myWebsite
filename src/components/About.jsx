@@ -41,18 +41,33 @@ const About = () => {
         <div className='cards'>
           <h2>{t('aboutEducationTitle')}</h2>
           <ProgressCard
-            title={t('title1Bac')}
+            title={t('master')}
             icon={
               <i
                 className='fa-solid fa-graduation-cap'
                 style={{ color: 'white', scale: '3.5', opacity: '0.66' }}
               ></i>
             }
-            startDate={t('BacStartDate')}
-            endDate={t('BacEndDate')}
-            description={t('BacDescription')}
+            startDate={t('masterStartDate')}
+            endDate={t('masterEndDate')}
+            description={t('masterDescription')}
             line={true}
           />
+            <ProgressCard
+              title={t('title1Licence')}
+              icon={
+                <i
+                  className='fa-solid fa-graduation-cap'
+                  style={{ color: 'white', scale: '3.5', opacity: '0.66' }}
+                ></i>
+              }
+              startDate={t('LicenceStartDate')}
+              endDate={t('LicenceEndDate')}
+              description={t('LicenceDescrtiption')}
+              download={'Licence.pdf'}
+              line={true}
+            />
+       
           <ProgressCard
             title={t('title1Deug')}
             icon={
@@ -66,18 +81,18 @@ const About = () => {
             description={t('DeugDescrtiption')}
             line={true}
           />
-          <ProgressCard
-            title={t('title1Licence')}
+             <ProgressCard
+            title={t('title1Bac')}
             icon={
               <i
                 className='fa-solid fa-graduation-cap'
                 style={{ color: 'white', scale: '3.5', opacity: '0.66' }}
               ></i>
             }
-            startDate={t('LicenceStartDate')}
-            endDate={t('LicenceEndDate')}
-            description={t('LicenceDescrtiption')}
-            download={'Licence.pdf'}
+            startDate={t('BacStartDate')}
+            endDate={t('BacEndDate')}
+            description={t('BacDescription')}
+            
           />
         </div>
 

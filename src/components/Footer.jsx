@@ -16,7 +16,7 @@ const Footer = () => {
       <div className='reseau'>
         <div>
           <a
-            href='https://www.linkedin.com/in/ayman-kacemi-439411197/'
+            href='https://www.linkedin.com/in/ayman-kacemi'
             target='blank'
             rel='noopener noreferrer'
           >
@@ -61,7 +61,7 @@ const Footer = () => {
 
       <div>
         <i className='fa fa-copyright' aria-hidden='true'></i>
-        {year} Ayman Kacemi (AK47)
+        {2023} Ayman Kacemi (AK47)  {t('infoFooter')}
       </div>
     </div>
   );

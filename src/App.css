@@ -676,3 +676,32 @@ transform: translateX(-50%) rotate(45deg);
   transform: scale(0.97);
 
  }
+
+
+
+ .projects-container.disabled {
+  cursor: not-allowed;
+  position: relative;
+}
+
+.projects-container.disabled .ButtonShowMore {
+  pointer-events: none; /* Disable click events on the button */
+}
+
+.hover-message {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.projects-container.disabled:hover .hover-message {
+  display: block;
+}

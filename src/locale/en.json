@@ -1,80 +1,83 @@
 {
-    "logoText":"Ayman_Kacemi",
-    "homePage":"Home",
-    "aboutPage":"About",
-    "ProjectsPages":"Projects",
-    "UsesPages":"Uses",
-    
-    
+    "logoText": "Ayman_Kacemi",
+    "homePage": "Home",
+    "aboutPage": "About",
+    "ProjectsPages": "Projects",
+    "UsesPages": "Uses",
     "homeTitle": "Hi there<1>,</1> I'm <2>Ayman</2>",
-    "homeDescription":"Im a beginer developer, <1> portraitist </1>, and a football lover.<2>  Just trying to start my profesionel carriere as a FULL-STACK developer.</2>",
-    "visitors":"Number of visitors",
-
+    "homeDescription": "I'm a Full-Stack and Mobile Developer at LICCI LINE, currently pursuing a Master's degree. <1>I draw portraits</1> and love football. <2>Highly motivated to join a structured company to grow professionally. Currently focused on Java with Spring Boot and React/Next.js.</2>",
+    "visitors": "Number of visitors",
     "aboutSectionTitle": "About",
     "aboutCountry": "Morocco",
-    "aboutCity":"Casablanca",
-
-    "aboutEducationTitle":"Education",
+    "aboutCity": "Casablanca",
+    "aboutEducationTitle": "Education",
     "title1Bac": "Baccalaureate",
-"BacStartDate": "September 2018 ",
-"BacEndDate": " June 2019",
-"BacDescription": "Obtaining the Baccalaureate certificate in the branch of mathematical sciences A at Al Baroudi High School.",
-
-"title1Deug": "DEUG Certificate",
-"DeugStartDate": "October 2019 ",
-"DeugEndDate": " June 2022",
-"DeugDescrtiption": "Obtaining the DEUG certificate in the SMI department at Faculty of Sciences Ben M'sik.",
-
-"title1Licence": "Bachelor's Degree",
-"LicenceStartDate": "October 2022 ",
-"LicenceEndDate": " July 2023",
-"LicenceDescrtiption": "Obtaining the Bachelor's degree in Database specialization with honors at Ben M'sik College of Science.",
-
-"aboutCoursesTitle": "Courses",
-
-"title1Mern": "MERN Stack",
-"MernStartDate": "September 2023 ",
-"MernEndDate": " October 2023",
-"MernDescrtiption": "Course to learn the basics of MERN on the Udemy platform with Brad.",
-
-"title1FullWeb": "The complete web developement bootcamp",
-"title1FullWebStartDate": "September 2023 ",
-"title1FullWebEndDate": " Ongoing",
-"title1FullWebDescrtiption": "The Complete 2023 Web Development Bootcamp on the Udemy platform with Angela Yu.",
-
-
+    "BacStartDate": "September 2018 ",
+    "BacEndDate": " June 2019",
+    "BacDescription": "Obtaining the Baccalaureate certificate in the branch of mathematical sciences A at Al Baroudi High School.",
+    "title1Deug": "DEUG Certificate",
+    "DeugStartDate": "October 2019 ",
+    "DeugEndDate": " June 2022",
+    "DeugDescrtiption": "Obtaining the DEUG certificate in the SMI department at Faculty of Sciences Ben M'sik.",
+    "title1Licence": "Bachelor's Degree",
+    "LicenceStartDate": "October 2022 ",
+    "LicenceEndDate": " July 2023",
+    "LicenceDescrtiption": "Obtaining the Bachelor's degree in Database specialization with honors at Ben M'sik College of Science.",
+    "aboutCoursesTitle": "Courses",
+    "title1Mern": "MERN Stack",
+    "MernStartDate": "September 2023 ",
+    "MernEndDate": " October 2023",
+    "MernDescrtiption": "Course to learn the basics of MERN on the Udemy platform with Brad.",
+    "title1FullWeb": "The complete web developement bootcamp",
+    "title1FullWebStartDate": "September 2023 ",
+    "title1FullWebEndDate": " Ongoing",
+    "title1FullWebDescrtiption": "The Complete 2023 Web Development Bootcamp on the Udemy platform with Angela Yu.",
     "projectsSectionTitle": "Projects",
-        
-    
-        "ThisProjectTitle" : "This Website",
-        "ThisProjectDesc" : "This website serves as a CV, and at the same time a training to apply what I learn.",
-    
-        "PFETitle" : "Study Final-Project (PFE)",
-        "PFEDesc" : "Design and analysis of the site's functions using UML, then developing the site using React JS and Laravel and also using a SQL database. Always holding meetings with supervisors almost like Scrum's sprint.<1>No Access</1>",
-    
-        "ToDoTitle":"To-Do List Application.",
-        "ToDoDesc":"Developing a to-do list site using HTML, CSS, and Javascript without using anything else to apply the basics.",
-    
-        "DevConnecterTitle":" DevConnector Application",
-        "DevConnecterDesc":"An application that I developed by following the MERN course on the Udemy platform, which means it uses a NoSql database. ",
-    
-        "WeatherAppTitle":"Weather App",
-        "WeatherAppDesc":"A website that I developed using React in order to strengthen my gains in dealing with APIs, where I used several REST API type APIs in order to facilitate providing the necessary information to the user.",
+    "ThisProjectTitle": "This Website",
+    "ThisProjectDesc": "This website serves as a CV, and at the same time a training to apply what I learn.",
+    "PFETitle": "Study Final-Project (PFE)",
+    "PFEDesc": "Design and analysis of the site's functions using UML, then developing the site using React JS and Laravel and also using a SQL database. Always holding meetings with supervisors almost like Scrum's sprint.<1>No Access</1>",
+    "ToDoTitle": "To-Do List Application.",
+    "ToDoDesc": "Developing a to-do list site using HTML, CSS, and Javascript without using anything else to apply the basics.",
+    "DevConnecterTitle": " DevConnector Application",
+    "DevConnecterDesc": "An application that I developed by following the MERN course on the Udemy platform, which means it uses a NoSql database. ",
+    "WeatherAppTitle": "Weather App",
+    "WeatherAppDesc": "A website that I developed using React in order to strengthen my gains in dealing with APIs, where I used several REST API type APIs in order to facilitate providing the necessary information to the user.",
+    "usesSectionTitle": "Uses",
+    "usesLaptop": "Laptop",
+    "usesOperatingSystem": "Operating System",
+    "usesProcessor": "Processor",
+    "usesMemory": "Memory",
+    "usesApplications": "Applications",
+    "usesCardName": "Card name",
+    "usesPhone": "Phone",
+    "phoneNumber": "+212601249845",
+    "ClickLogoText": " Click on logo to visit the website",
+    "cv": "Curriculum Vitae (CV)",
+    "certificat": "Certificate",
+    "master": "Master's Degree",
+    "masterStartDate": "October 2024",
+    "masterEndDate": "July 2026 (in progress)",
+    "masterDescription": "ENSET | University Master's Degree in Engineering, specializing in Big Data and Cloud Computing",
+    "Projects": {
+        "RentalClient": {
+            "title": "Car Rental System for Clients",
+            "desc": "A Next.js booking app where clients can browse, filter, and book cars with an integrated payment process."
+        },
+        "RentalAdmin": {
+            "title": "Rental System Admin Panel",
+            "desc": "An admin panel built with React, allowing administrators to create partners who manage car fleets, agencies, and reservations."
+        },
+        "CashBackApp": {
+            "title": "Cashback Application",
+            "desc": "A Flutter-based cashback app for clients and partners. Clients scan a generated QR code from the partner app to earn points."
+        },
+        "InsuranceBrokerClientApp": {
+            "title": "Insurance Broker Client App",
+            "desc": "A Flutter + Laravel app where clients can log in, generate insurance quotes, and access their data once synced with NT-SOFT's external API."
+        }
+    },
+    "infoFooter": "This is an old version – I'm working on a new one with Next.js & TypeScript (20/03/2025).",
+    "linkHoverMessage":"Sorry, this is not available for viewing, maybe in an interview 😉"
 
-
-     "usesSectionTitle": "Uses",
-     "usesLaptop" : "Laptop",
-     "usesOperatingSystem" : "Operating System",
-     "usesProcessor" : "Processor",
-     "usesMemory" : "Memory",
-     "usesApplications" : "Applications",
-     "usesCardName" : "Card name",
-     "usesPhone" : "Phone",
-
-     "phoneNumber":"+212601249845",
-     "ClickLogoText":" Click on logo to visit the website",
-     "cv":"Curriculum Vitae (CV)",
-     "certificat":"Certificate"
-
-    
 }

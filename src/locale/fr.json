@@ -1,80 +1,83 @@
 {
-    "logoText":"Ayman_Kacemi",
-    "homePage":"Accueil",
-    "aboutPage":"À propos",
-    "ProjectsPages":"Projets",
-    "UsesPages":"Utilisations",
-
-    "homeTitle":"Salut<1>,</1> je suis <2>Ayman</2>",
-    "homeDescription":"Je suis un développeur débutant, <1>portraitiste</1> et un amoureux du football. <2>J'essaie  de commencer ma carrière professionnelle en tant que développeur FULL-STACK. </2>",
-    "visitors":"Nombre de visiteurs",
-
+    "logoText": "Ayman_Kacemi",
+    "homePage": "Accueil",
+    "aboutPage": "À propos",
+    "ProjectsPages": "Projets",
+    "UsesPages": "Utilisations",
+    "homeTitle": "Salut<1>,</1> je suis <2>Ayman</2>",
+    "visitors": "Nombre de visiteurs",
+    "homeDescription": "Je suis un développeur Full-Stack et mobile chez LICCI LINE, tout en poursuivant un Master. <1>Je dessine des portraits</1> et j’aime le football. <2>Motivé à intégrer une entreprise structurée pour progresser professionnellement. Actuellement intéressé par Java avec Spring Boot et React/Next.js.</2>",
     "aboutSectionTitle": "À propos",
     "aboutCountry": "Maroc",
-    "aboutCity":"Casablanca",
-
-    "aboutEducationTitle":"Éducation",
-
+    "aboutCity": "Casablanca",
+    "aboutEducationTitle": "Éducation",
     "title1Bac": "Baccalauréat",
-"BacStartDate": "Septembre 2018 ",
-"BacEndDate": " Juin 2019",
-"BacDescription": "Obtention du certificat de baccalauréat en filière sciences mathématiques A au lycée Al Baroudi.",
-
-"title1Deug": "DEUG",
-"DeugStartDate": "Octobre 2019 ",
-"DeugEndDate": " Juin 2022",
-"DeugDescrtiption": "Obtention du certificat DEUG en filière SMI à la Faculté des Sciences de Ben M'sik.",
-
-"title1Licence": "Licence",
-"LicenceStartDate": "Octobre 2022 ",
-"LicenceEndDate": " Juillet 2023",
-"LicenceDescrtiption": "Obtention de la licence en spécialisation Base de données avec mention bien à la Faculté des Sciences de Ben M'sik.",
-
-"aboutCoursesTitle": "Cours",
-
-"title1Mern": "MERN Stack",
-"MernStartDate": "Septembre 2023 ",
-"MernEndDate": " Octobre 2023",
-"MernDescrtiption": "Cours pour apprendre les bases de MERN sur la plateforme Udemy avec Brad.",
-
-"title1FullWeb": "Le bootcamp complet de développement web",
-"title1FullWebStartDate": "Septembre 2023 ",
-"title1FullWebEndDate": " En cours",
-"title1FullWebDescrtiption": "Cours complet sur les bases du web sur la plateforme Udemy avec Angela Yu.",
-
-
-
+    "BacStartDate": "Septembre 2018 ",
+    "BacEndDate": " Juin 2019",
+    "BacDescription": "Obtention du certificat de baccalauréat en filière sciences mathématiques A au lycée Al Baroudi.",
+    "title1Deug": "DEUG",
+    "DeugStartDate": "Octobre 2019 ",
+    "DeugEndDate": " Juin 2022",
+    "DeugDescrtiption": "Obtention du certificat DEUG en filière SMI à la Faculté des Sciences de Ben M'sik.",
+    "title1Licence": "Licence",
+    "LicenceStartDate": "Octobre 2022 ",
+    "LicenceEndDate": " Juillet 2023",
+    "LicenceDescrtiption": "Obtention de la licence en spécialisation Base de données avec mention bien à la Faculté des Sciences de Ben M'sik.",
+    "aboutCoursesTitle": "Cours",
+    "title1Mern": "MERN Stack",
+    "MernStartDate": "Septembre 2023 ",
+    "MernEndDate": " Octobre 2023",
+    "MernDescrtiption": "Cours pour apprendre les bases de MERN sur la plateforme Udemy avec Brad.",
+    "title1FullWeb": "Le bootcamp complet de développement web",
+    "title1FullWebStartDate": "Septembre 2023 ",
+    "title1FullWebEndDate": " En cours",
+    "title1FullWebDescrtiption": "Cours complet sur les bases du web sur la plateforme Udemy avec Angela Yu.",
     "projectsSectionTitle": "Projets",
-
-    
-        "ThisProjectTitle" : "Ce site web",
-        "ThisProjectDesc" : "Ce site web sert de CV, et en même temps d'entraînement pour appliquer ce que j'apprends.",
-    
-        "PFETitle" : "Projet de fin d'études (PFE)",
-        "PFEDesc" : "Conception et analyse des fonctions du site en utilisant UML, puis développement du site en utilisant React JS et Laravel et également l'utilisation d'une base de données SQL. Toujours en tenant des réunions avec les encadrants presque comme le sprint de Scrum.<1>Pas d’accès</1>",
-    
-        "ToDoTitle":"Application de liste de tâches.",
-        "ToDoDesc":"Développement d'un site de liste de tâches en utilisant HTML, CSS et Javascript sans utiliser quoi que ce soit d'autre pour appliquer les bases.",
-    
-        "DevConnecterTitle":" Application DevConnector",
-        "DevConnecterDesc":"Une application que j'ai développée en suivant le cours MERN sur la plateforme Udemy, ce qui signifie qu'elle utilise une base de données NoSql. ",
-    
-        "WeatherAppTitle":"Application météo",
-        "WeatherAppDesc":"Un site que j'ai développé en utilisant React afin de renforcer mes acquis dans l'utilisation des APIs, où j'ai utilisé plusieurs APIs de type REST API afin de faciliter la fourniture des informations nécessaires à l'utilisateur.",
-    
-
-
+    "ThisProjectTitle": "Ce site web",
+    "ThisProjectDesc": "Ce site web sert de CV, et en même temps d'entraînement pour appliquer ce que j'apprends.",
+    "PFETitle": "Projet de fin d'études (PFE)",
+    "PFEDesc": "Conception et analyse des fonctions du site en utilisant UML, puis développement du site en utilisant React JS et Laravel et également l'utilisation d'une base de données SQL. Toujours en tenant des réunions avec les encadrants presque comme le sprint de Scrum.<1>Pas d’accès</1>",
+    "ToDoTitle": "Application de liste de tâches.",
+    "ToDoDesc": "Développement d'un site de liste de tâches en utilisant HTML, CSS et Javascript sans utiliser quoi que ce soit d'autre pour appliquer les bases.",
+    "DevConnecterTitle": " Application DevConnector",
+    "DevConnecterDesc": "Une application que j'ai développée en suivant le cours MERN sur la plateforme Udemy, ce qui signifie qu'elle utilise une base de données NoSql. ",
+    "WeatherAppTitle": "Application météo",
+    "WeatherAppDesc": "Un site que j'ai développé en utilisant React afin de renforcer mes acquis dans l'utilisation des APIs, où j'ai utilisé plusieurs APIs de type REST API afin de faciliter la fourniture des informations nécessaires à l'utilisateur.",
     "usesSectionTitle": "Utilisations",
-    "usesLaptop" : "Ordinateur portable",
-    "usesOperatingSystem" : "Système d'exploitation",
-    "usesProcessor" : "Processeur",
-    "usesMemory" : "Mémoire",
-    "usesApplications" : "Applications",
-    "usesCardName" : "Nom de la carte",
-    "usesPhone" : "Téléphone",
+    "usesLaptop": "Ordinateur portable",
+    "usesOperatingSystem": "Système d'exploitation",
+    "usesProcessor": "Processeur",
+    "usesMemory": "Mémoire",
+    "usesApplications": "Applications",
+    "usesCardName": "Nom de la carte",
+    "usesPhone": "Téléphone",
+    "phoneNumber": "+212601249845",
+    "ClickLogoText": " Cliquez sur le logo pour visiter le site",
+    "cv": "Curriculum Vitae (CV)",
+    "certificat": "certificat",
+    "master": "Master",
+    "masterStartDate": "Octobre 2024",
+    "masterEndDate": "Juillet 2026 (en cours)",
+    "masterDescription": "ENSET | Master universitaire en ingénierie, spécialisé en Big Data et Cloud Computing",
+    "Projects": {
+        "RentalClient": {
+            "title": "Système de location de voitures pour les clients",
+            "desc": "Une application de réservation Next.js permettant aux clients de parcourir, filtrer et réserver des voitures avec un processus de paiement intégré."
+        },
+        "RentalAdmin": {
+            "title": "Panneau d'administration du système de location",
+            "desc": "Un panneau d'administration développé avec React, permettant aux administrateurs de créer des partenaires qui gèrent les flottes de voitures, les agences et les réservations."
+        },
+        "CashBackApp": {
+            "title": "Application de cashback",
+            "desc": "Une application de cashback développée avec Flutter, où les clients scannent un QR code généré par l'application partenaire pour gagner des points."
+        },
+        "InsuranceBrokerClientApp": {
+            "title": "Application client pour un courtier en assurance",
+            "desc": "Une application Flutter + Laravel permettant aux clients de se connecter, générer des devis d'assurance et accéder à leurs données une fois synchronisées avec l'API externe de NT-SOFT."
+        }
+    },
 
-    "phoneNumber":"+212601249845",
-    "ClickLogoText":" Cliquez sur le logo pour visiter le site",
-    "cv":"Curriculum Vitae (CV)",
-    "certificat":"certificat"
+    "infoFooter": "Ceci est une ancienne version – Je travaille sur une nouvelle avec Next.js et TypeScript (20/03/2025).",
+    "linkHoverMessage":"Désolé, ceci n'est pas disponible pour consultation, peut-être lors d'un entretien 😉"
 }
