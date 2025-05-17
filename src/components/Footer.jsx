@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         <div>
           <a
-            href='https://www.instagram.com/kacemi47/'
+            href='https://www.instagram.com/k_ayman47/'
             target='blank'
             rel='noopener noreferrer'
           >
