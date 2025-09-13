@@ -61,7 +61,8 @@ const Footer = () => {
 
       <div>
         <i className='fa fa-copyright' aria-hidden='true'></i>
-        {2023} Ayman Kacemi (AK47)  {t('infoFooter')}
+        {2023} Ayman Kacemi (AK47) 
+{/*         {t('infoFooter')} */}
       </div>
     </div>
   );
